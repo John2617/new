@@ -1,0 +1,11 @@
+data<-iris
+summary_stats<-summary(data)
+mean_values<-sapply(data[,1:4],mean)
+median_values<-sapply(data[,1:4],median)
+variance_values<-sapply(data[,1:4],var)
+sd_values<-sapply(data[,1:4],sd)
+print(paste("Summary Statistics:\n",summary_stats,"\n\n"))
+print(paste("Mean Values:\n",mean_values,"\n\n"))
+print(paste("Median Values:\n",median_values,"\n\n"))
+print(paste("Variance Values:\n",variance_values,"\n\n"))
+print(paste("Standard Deviation Values:\n",sd_values,"\n\n"))
